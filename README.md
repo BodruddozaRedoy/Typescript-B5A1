@@ -1,2 +1,4 @@
 ## Typescript
-- Typescript is syntactic superset of Javascript which adds static types. This basically means  that typescript adds syntax on top of Javascript which allowing developers to assign types.
+ Typescript is syntactic superset of Javascript which adds static types. This basically means  that typescript adds syntax on top of Javascript which allowing developers to assign types.
+ 
+ <h1>Hellod</h1>
