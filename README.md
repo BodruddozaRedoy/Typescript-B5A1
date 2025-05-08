@@ -7,4 +7,17 @@
 
 <h3>KeyOf</h3>
 <p>keyof is very useful and flexible keyword for accessing the property names of an object in an union format. It can be used in several way, but one useful way is for optional property.</p>
-<pre> <code> ```javascript function greet(name) { return `Hello, ${name}!`; } ``` </code> </pre>
+<pre> <code>type User = {
+  id: number;
+  name: string;
+};
+
+type UserKeys = keyof User; // 'id' | 'name'
+
+function getValue<T, K extends keyof T>(obj: T, key: K): T[K] {
+  return obj[key];
+}
+
+const user: User = { id: 1, name: "Alice" };
+const userName = getValue(user, "name"); // "Alice"
+</code> </pre>
