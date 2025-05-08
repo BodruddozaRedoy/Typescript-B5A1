@@ -12,7 +12,7 @@
   name: string;
 };
 
-type UserKeys = keyof User; // 'id' | 'name'
+type UserProperty = keyof User; // 'id' | 'name'
 
 function getValue<T, K extends keyof T>(obj: T, key: K): T[K] {
   return obj[key];
